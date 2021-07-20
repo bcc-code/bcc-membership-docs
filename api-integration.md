@@ -21,8 +21,8 @@ It is currently only possible to get access to the API via an API Key. OAuth2 su
 ## Code snippets
 For these example we are using the [node-fetch](https://www.npmjs.com/package/node-fetch) npm package
 <br />
-Get a person given his personID
-``` js
+### Example 1 - Get a person given his personID
+```js
 const fetch = require('node-fetch');
     try {
         let httpResponse = await fetch('https://members.bcc.no/person?personID=12345',
@@ -30,7 +30,7 @@ const fetch = require('node-fetch');
                 method: 'get',
                 headers:
                     {   'Content-Type': 'application/json',
-                        'x-access-token':'var>API-KEY-HERE</var>'
+                        'x-access-token':'API-KEY-HERE'
                     }
             })
 
@@ -43,6 +43,28 @@ const fetch = require('node-fetch');
     }
 ```
 
+### Example 2 - Get all people from Oslo/Follo (churchID = 69)
+
+```js
+const fetch = require('node-fetch');
+    try {
+        let httpResponse = await fetch('https://members.bcc.no/person?churchID=69&$limit=50&$skip=0',
+            {
+                method: 'get',
+                headers:
+                    {   'Content-Type': 'application/json',
+                        'x-access-token':'API-KEY-HERE'
+                    }
+            })
+
+        const result = await httpResponse.json()
+        const everybodyFromOsloFollo = result.data
+        console.log('Fifty people retrieved in Oslo/Follo from the members API', JSON.stringify(everybodyFromOsloFollo))
+
+    } catch (error) {
+        console.log(error.message)
+    }
+```
 
 ## OAuth2
 Comming soon
