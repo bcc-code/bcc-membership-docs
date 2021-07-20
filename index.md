@@ -9,6 +9,7 @@ This documentation is aimed at you as a developer/Technical Administrator for yo
 **swagger: [https://members.bcc.no/docs](https://members.bcc.no/docs)**
 
 ## Menu
+- [Home](index.md)
 - [API integration](api-integration.md)
 - [Webhooks integration](api-integration.md)
 
