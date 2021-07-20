@@ -6,8 +6,8 @@ This documentation is aimed at you as a developer/Technical Administrator for yo
 **swagger: https://members.bcc.no/docs**
 
 ## Menu
-[API integration](api-integration.md)
-[Webhooks integration](api-integration.md)
+- [API integration](api-integration.md)
+- [Webhooks integration](api-integration.md)
 
 ## Actors
 ### Members
