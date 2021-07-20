@@ -5,7 +5,7 @@ url: https://members.bcc.no
 swagger: https://members.bcc.no/docs
 
 ## Menu
-[API integration](./api-integration.md)
+[API integration](api-integration.md)
 
 ## Actors
 ### Members
