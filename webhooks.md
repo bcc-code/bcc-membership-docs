@@ -1,7 +1,7 @@
 ## Menu
 - [Home](index.md)
 - [API integration](api-integration.md)
-- [Webhooks integration](api-integration.md)
+- [Webhooks integration](webhooks.md)
 
 ## Webhooks
 The Members System support webhooks. You can register your webhook in the UI or via the API. Currently we only support changes for the "person" entity.
