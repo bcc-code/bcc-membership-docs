@@ -28,10 +28,10 @@ This documentation is aimed at you as a Developer/Technical Administrator for yo
 The technical admin is a person that is registered in members that has a role called "Technical Administrator". This person has access to the system to manage the application for his organisation and to do things like applies for scopes etc. _(Are you the tehcnical admin for your organisation? Write an email to [it@bcc.no](mailto:it@bcc.no) to get access for your organisation)_
 
 ### Organization
-All organisation that has a relationship to BCC, for example to get members personal data, will be registered in Members as an organisation
+All organisations that has a relationship to BCC, for example because they are dependent on the members data, will be registered in Members as an organisation
 
-### Client
-Organisation can have one or more applications registered attached to that organisation.
+### Application
+An Organisation can have one or more applications registered that are attached to that organisation.
 
 ### Scope
 A scope is a permission for your application for example the `members.read_membership` scope will give you access to read fields related to the members membership. See [Data Structures and Scopes](data-structures-and-scopes.md)
