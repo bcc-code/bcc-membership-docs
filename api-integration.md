@@ -1,10 +1,10 @@
-
-
+#API Integration
 
 ## Menu
 - [Home](index.md)
 - [API integration](api-integration.md)
 - [Webhooks integration](webhooks.md)
+- [Data Structures and Scopes](data-structures-and-scopes.md)
 
 ## Integrating with the members api
 Once scopes have been approved for your client(application) you can integrate with the members api.
