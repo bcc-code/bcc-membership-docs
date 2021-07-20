@@ -3,7 +3,7 @@
 - [Home](index.md)
 - [API integration](api-integration.md)
 - [Webhooks integration](webhooks.md)
-- [Data Structures and Scopes](webhooks.md)
+- [Data Structures and Scopes](data-structures-and-scopes.md)
 
 ## Webhooks
 The Members System support webhooks. You can register your webhook in the UI or via the API. Currently we only support changes for the "person" entity.
