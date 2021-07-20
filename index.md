@@ -2,7 +2,7 @@
 This documentation is aimed at you as a developer/Technical Administrator for your organisation. The documentation here provides documentation on all the ways it is possible to integrate with BCC's membership system. 
 
 ## Menu
-[API integration](./api-integration.md)
+[API integration](api-integration.md)
 
 ## Actors
 ### Members
