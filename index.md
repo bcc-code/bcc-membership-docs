@@ -18,7 +18,7 @@ This documentation is aimed at you as a Developer/Technical Administrator for yo
 1. Write to [it@bcc.no](mailto:it@bcc.no) requesting the "Technical Administrator" role
 2. Log into [https://members.bcc.no](https://members.bcc.no) and configure your application settings
 3. In the application settings you can also apply for the scopes you require for your [organisation](https://members.bcc.no/organisations)
-4. You will be able use the scopes that has been approved in your application
+4. You will be able use the scopes that has been approved for your application
 
 # Concepts and Roles
 ### Members
