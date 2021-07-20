@@ -11,7 +11,7 @@ This documentation is aimed at you as a developer/Technical Administrator for yo
 ## Menu
 - [Home](index.md)
 - [API integration](api-integration.md)
-- [Webhooks integration](api-integration.md)
+- [Webhooks integration](webhooks.md)
 
 # Concepts and Roles
 ### Members
