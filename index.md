@@ -12,7 +12,7 @@ This documentation is aimed at you as a Developer/Technical Administrator for yo
 - [Home](index.md)
 - [API integration](api-integration.md)
 - [Webhooks integration](webhooks.md)
-- [Data Structures and Scopes](webhooks.md)
+- [Data Structures and Scopes](data-structures-and-scopes.md)
 
 ## Getting Started
 1. Write to [it@bcc.no](mailto:it@bcc.no) requesting the "Technical Administrator" role
@@ -23,13 +23,17 @@ This documentation is aimed at you as a Developer/Technical Administrator for yo
 # Concepts and Roles
 ### Members
 "Members" is the name for BCC's membership system. This is where all the members's data is residing
+
 ### Techinical Admin
 The technical admin is a person that is registered in members that has a role called "Technical Administrator". This person has access to the system to manage the application for his organisation and to do things like applies for scopes etc. (Are you the tehcnical admin for your organisation? Write an email to it@bcc.no to get access for your organisation)
+
 ### Organization
 All organisation that has a relationship to BCC, for example to get members personal data, will be registered in Members as an organisation
+
 ### Client
 Organisation can have one or more applications registered attached to that organisation.
+
 ### Scope
-A scope is a permission for your application for example the ``members.read_membership`` scope will give you access to read fields related to the members membership.
+A scope is a permission for your application for example the `members.read_membership` scope will give you access to read fields related to the members membership. See [Data Structures and Scopes](data-structures-and-scopes.md)
 
 
