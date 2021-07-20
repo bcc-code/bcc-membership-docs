@@ -12,6 +12,7 @@ This documentation is aimed at you as a developer/Technical Administrator for yo
 - [Home](index.md)
 - [API integration](api-integration.md)
 - [Webhooks integration](webhooks.md)
+- [Data Structures & Scopes](webhooks.md)
 
 ## Getting Started
 1. Write to it@bcc.no requesting the "Technical Administrator" role
