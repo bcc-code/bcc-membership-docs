@@ -13,6 +13,12 @@ This documentation is aimed at you as a developer/Technical Administrator for yo
 - [API integration](api-integration.md)
 - [Webhooks integration](webhooks.md)
 
+## Getting Started
+1. Write to it@bcc.no requesting the "Technical Administrator" role
+2. Log into members.bcc.no and configure your application settings
+3. In the application settings you can also apply for the scopes you require for your organisation
+4. You will be able use the scopes that has been approved in your application
+
 # Concepts and Roles
 ### Members
 "Members" is the name for BCC's membership system. This is where all the members's data is residing
@@ -25,8 +31,4 @@ Organisation can have one or more applications registered attached to that organ
 ### Scope
 A scope is a permission for your application for example 
 
-## Setup
-1. Write to it@bcc.no requesting the "Technical Administrator" role
-2. Log into members.bcc.no and configure your application settings
-3. In the application settings you can also apply for the scopes you require for your organisation
-4. You will be able use the scopes that has been approved in your application
+
