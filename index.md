@@ -7,6 +7,7 @@ This documentation is aimed at you as a developer/Technical Administrator for yo
 
 ## Menu
 [API integration](api-integration.md)
+[Webhooks integration](api-integration.md)
 
 ## Actors
 ### Members
@@ -24,3 +25,4 @@ A scope is a permission for your application for example
 1. Write to it@bcc.no requesting the "Technical Administrator" role
 2. Log into members.bcc.no and configure your application settings
 3. In the application settings you can also apply for the scopes you require for your organisation
+4. You will be able use the scopes that has been approved in your 
