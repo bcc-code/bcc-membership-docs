@@ -9,7 +9,7 @@
 ## Integrating with the members api
 Once scopes have been approved for your client(application) you can integrate with the members api.
 
-## API key access
+## API-key
 
 ## OAuth2
 Comming soon
