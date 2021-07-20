@@ -53,13 +53,13 @@ const fetch = require('node-fetch');
                 method: 'get',
                 headers:
                     {   'Content-Type': 'application/json',
-                        'x-access-token':'API-KEY-HERE'
+                        'x-access-token':'7a508861-5afd-434c-983a-04de303bfeaa'
                     }
             })
 
         const result = await httpResponse.json()
         const everybodyFromOsloFollo = result.data
-        console.log('Person retrieved from the members api', JSON.stringify(everybodyFromOsloFollo))
+        console.log('Fifty people retrieved in Oslo/Follo from the members API', JSON.stringify(everybodyFromOsloFollo))
 
     } catch (error) {
         console.log(error.message)
