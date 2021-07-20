@@ -10,7 +10,7 @@ This documentation is aimed at you as a developer/Technical Administrator for yo
 - [API integration](api-integration.md)
 - [Webhooks integration](api-integration.md)
 
-## Actors
+### Concepts and Roles
 ### Members
 Members is the name for BCC's membership system. This is where all the members's data is residing
 ### Techinical Admin
