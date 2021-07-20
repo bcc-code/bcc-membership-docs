@@ -53,7 +53,7 @@ const fetch = require('node-fetch');
                 method: 'get',
                 headers:
                     {   'Content-Type': 'application/json',
-                        'x-access-token':'7a508861-5afd-434c-983a-04de303bfeaa'
+                        'x-access-token':'API-KEY-HERE'
                     }
             })
 
