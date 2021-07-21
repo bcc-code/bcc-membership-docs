@@ -16,3 +16,25 @@ The Members System support webhooks. You can register your webhook in the UI or 
 
 
 ## Request interval for data sync (ms)
+
+
+## Webhook functionality (UI and API) -> Philip
+### How to register webhook
+  1. UI - with images
+  2. API - with code snippets
+### How to configure webhook
+  1. UI - with images
+  2. API - with code snippets
+### Signing Key
+  1. UI - with images
+  2. API - with code snippets
+### Test webhook
+  1. UI - with images
+  2. API - with code snippets
+//Read API part (api-integration.md) to structure this the same way
+
+## Implementing webhooks in your app -> Mikolaj
+1. confirming that webhook endpoint is properly exposed
+1. how to decode a message (with code snippet)
+2. body structure of a message
+3. confirming validity/authenticity of a message
