@@ -75,10 +75,10 @@ Update `Signing Key` for application X
         console.log(error.message)
     }
  ```
- ###### Run Test
- Triegger a `webhook test` for application X
- <br />
- _Code snippet comming soon_
+###### Run Test
+Trigger a `webhook test` for application X
+<br />
+_Code snippet comming soon_
  
 ###### Sync Data
 Trigger a `full sync` for application X
