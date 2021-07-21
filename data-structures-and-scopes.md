@@ -8,7 +8,7 @@ This section describe `person` object and how it relates to scopes.
 - [Data Structures and Scopes](data-structures-and-scopes.md)
 
 ## Scopes
-Currently Members supports the following scopes
+Currently Members supports the following scopes. (_To understand the concept of scopes please have a look at scopes section on the [Home](index.md) page_)
 #### Identity (These scopes are consistent with OIDC scopes related to claims)
 - `email`
 - `phone`
@@ -23,7 +23,7 @@ Currently Members supports the following scopes
 Once you have the "Technical Administrator" role ([See Getting Started](index.md)) you will be able to log in to members and apply for these scopes for your application. See [API integration](api-integration.md) it shows the navigation to your application.
 
 ## Data Structure
-Currently these scopes are all related to the `person` object and maps to the person fields as follows
+Currently these scopes are all related to the `person` object and maps to the person fields as follows...
 
 ###### By default you automatically get provided with the "personID" even if you don't have access to any scopes.
 ```json
