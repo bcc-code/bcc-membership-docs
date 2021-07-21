@@ -18,7 +18,7 @@ The signing key is used to create a hash of the body of the request. This will g
 ###### Run Test
 When implementing your webhook endpoint it might be nice to test it every now and then to make sure everything is on track. You can use the "Run Test" method for this. When you click this button we will take the currently logged in user and POST it to your webhook.
 ###### Sync Data
-When you click on "Sync Data" we will make sure to push all the persons your application have access to to your webhook. This might overload your system. The `Request interval for data sync` setting is there to prevent that, if you give this setting a value we will make sure not to POST request more frequent than what the value indicates. If the value is 0, we will POST message as fast as our system can scale to your endpoint.
+When you click on "Sync Data" we will make sure to push all the persons your application have access to to your webhook. This might overload your system. The `Request interval for data sync` setting is there to prevent that, if you give this setting a value we will make sure not to POST requests more frequent than what the value indicates. If the value is 0, we will POST message as fast as our system can scale to your endpoint.
  
 ## Using the API
 ###### URL
