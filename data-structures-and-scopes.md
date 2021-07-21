@@ -23,7 +23,7 @@ Currently Members supports the following scopes
 Once you have the "Technical Administrator" role ([See Getting Started](index.md)) you will be able to log in to members and apply for these scopes for your application. See [API integration](api-integration.md) it shows the navigation to your application.
 
 ## Data Structure
-Currently these scopes are all related to the `person` object and looks maps to the scopes as follows
+Currently these scopes are all related to the `person` object and maps to the person fields as follows
 
 ###### `default` (You automatically get provided with the "personID" even if you have not scopes approved)
 ```json
