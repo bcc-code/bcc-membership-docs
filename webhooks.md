@@ -85,8 +85,43 @@ Trigger a `full sync` for application X
 <br />
 _Code snippet comming soon_
 
-## Implementing webhooks in your app -> Mikolaj
-1. confirming that webhook endpoint is properly exposed
-1. how to decode a message (with code snippet)
-2. body structure of a message
-3. confirming validity/authenticity of a message
+## Implementing webhooks in your app
+To properly receive webhook messages in your application some preparation is needed.
+Here you can find most important information on that topic. In case of any problems, please consult first Google Cloud Pub/Sub documentation on Push-based messaging systems: [link](https://cloud.google.com/pubsub/docs/push)
+
+### Confirming that webhook endpoint is properly exposed
+For Google Pub/Sub to properly deliver messages, endpoint specified in Members UI/API must be a publicly accessible HTTPS address. The server for the push endpoint must have a valid SSL certificate signed by a certificate authority. If all these requirements are fullfilled endpoint should be able to receive requests.
+
+### Receiving messages
+When Pub/Sub delivers a message to a push endpoint, Pub/Sub sends the message in the body of a POST request. The body of the request is a JSON object and the message data is in the message.data field. The message data is base64-encoded.
+
+Following is an example of message issued by Members Webhook:
+```json
+{
+    "message": {
+        "attributes": {
+            "hash": "HashOfData"
+        },
+        "data": [{updatedMemberScopedData}]
+        "messageId": "2070443601311540",
+        "message_id": "2070443601311540",
+        "publishTime": "2021-02-26T19:13:55.749Z",
+        "publish_time": "2021-02-26T19:13:55.749Z",
+    },
+   "subscription": "idOfASubscription"
+}
+```
+where ``` updatedMemberScopedData ``` is PersonDetails entity with removed properties according to scopes approved.
+
+### Confirming message
+After you receive a push request, return an HTTP status code. To acknowledge the message, return one of the following status codes:
+* 102
+* 200
+* 201
+* 202
+* 204
+
+To send a negative acknowledgement for the message, return any other status code. If you send a negative acknowledgement or the acknowledgement deadline expires, Pub/Sub resends the message. You can't modify the acknowledgement deadline of individual messages that you receive from push subscriptions.
+
+### Signing key
+
