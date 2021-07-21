@@ -9,7 +9,7 @@ This section describe `person` object and how it relates to scopes.
 
 ## Scopes
 Currently Members supports the following scopes. (_To understand the concept of scopes please have a look at scopes section on the [Home](index.md) page_)
-#### Identity (These scopes are consistent with OIDC scopes related to claims)
+#### Identity (These scopes are consistent with [OIDC](https://openid.net/specs/openid-connect-core-1_0.html) scopes related to claims)
 - `email`
 - `phone`
 - `profile`
