@@ -25,7 +25,7 @@ Once you have the "Technical Administrator" role ([See Getting Started](index.md
 ## Data Structure
 Currently these scopes are all related to the `person` object and maps to the person fields as follows
 
-###### `default` (You automatically get provided with the "personID" even if you have not scopes approved)
+###### By default you automatically get provided with the "personID" even if you don't have access to any scopes.
 ```json
   {
     "personID": 54512
