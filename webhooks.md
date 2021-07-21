@@ -8,7 +8,7 @@ The Members System support webhooks. You can register your webhook in the UI or 
 
 
 ## Webhook functionality (UI and API)
-_To access your application please see the [Getting Started](index.md) guid and the [Webhooks integration](webhooks.md) guide_
+To access your application please see the [Getting Started](index.md) guid and the [Webhooks integration](webhooks.md) guide.
 ## Using the UI
 ![image](https://user-images.githubusercontent.com/12196246/126508777-0de66d0e-d1ab-49dd-971d-40c71776ccc0.png)
 ###### URL
