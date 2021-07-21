@@ -20,7 +20,7 @@ When implementing your webhook endpoint it might be nice to test it every now an
 ###### Sync Data
 When you click on "Sync Data" we will make sure to push all the persons your application have access to to your webhook. This might overload your system. The "Request interval for data sync" setting is there to prevent that, if you give this setting a value we will make sure not to POST request more frequent than what the value indicates. If the value is 0, we will POST message as fast as our system can scale to your endpoint.
  
- ## Using the API
+## Using the API
 ###### URL
 Update `Webhook url` for application X. _(In order to remove the webhook set url to empty string)_
  ```js
