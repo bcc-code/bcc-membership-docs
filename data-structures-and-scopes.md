@@ -95,3 +95,58 @@ Currently these scopes are all related to the `person` object and looks maps to 
     }
   }
 ```
+###### `members.read_membership`
+```json
+  {
+    "personID": 54512,
+    "churchID": 69,
+    "church": {
+      "active": true,
+      "archived": false,
+      "endDate": "2021-11-28T00:00:00.000Z",
+      "org": {
+        "churchID": 69,
+        "name": "Oslo/Follo",
+        "orgID": 69,
+        "visitingAddress": {
+          "address1": "Ryenstubben 2",
+          "address2": "0679 Oslo",
+          "address3": null,
+          "address4": null,
+          "city": null,
+          "country": {
+            "iso2Code": "no",
+            "nameEn": "Norway",
+            "nameNative": "Norge",
+            "nameNo": "Norge"
+          },
+          "postalCode": 1444
+        }
+      },
+      "startDate": "2020-10-18T11:52:46.474Z"
+    }
+  }
+```
+###### `members.read_family`
+```json
+  {
+    "personID": 54512,
+    "related": {
+      "spouse": [
+        {
+          "church": {
+            "org": {
+              "churchID": 69
+            }
+          },
+          "displayName": "Batie Sofa Daly",
+          "personID": 13629
+        }
+      ],
+      "children": [...],
+      "dependents": [...],
+      "guardians":[...],
+      "parents": [...]
+    }
+  }
+```
