@@ -1,5 +1,5 @@
 # Data Structures and Scopes
-This section describe person object and how it relates to scopes.
+This section describe `person` object and how it relates to scopes.
 
 ## Menu
 - [Home](index.md)
