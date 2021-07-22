@@ -87,13 +87,13 @@ _Code snippet comming soon_
 
 ## Implementing webhooks in your app
 To properly receive webhook messages in your application some preparation is needed.
-Here you can find most important information on that topic. In case of any problems, please consult first Google Cloud Pub/Sub documentation on Push-based messaging systems: [link](https://cloud.google.com/pubsub/docs/push)
+Here you can find most important information on that topic.
 
 ### Confirming that webhook endpoint is properly exposed
-For Google Pub/Sub to properly deliver messages, endpoint specified in Members UI/API must be a publicly accessible HTTPS address. The server for the push endpoint must have a valid SSL certificate signed by a certificate authority. If all these requirements are fullfilled endpoint should be able to receive requests.
+For Members Webhooks to properly deliver messages, endpoint specified in Members UI/API must be a publicly accessible HTTPS address. The server for the push endpoint must have a valid SSL certificate signed by a certificate authority. If all these requirements are fullfilled endpoint should be able to receive requests.
 
 ### Receiving messages
-When Pub/Sub delivers a message to a push endpoint, Pub/Sub sends the message in the body of a POST request. The body of the request is a JSON object and the message data is in the message.data field. The message data is base64-encoded.
+When Members Webhooks delivers a message to a push endpoint, Members Webhooks sends the message in the body of a POST request. The body of the request is a JSON object and the message data is in the message.data field. The message data is base64-encoded.
 
 Following is an example of message issued by Members Webhook:
 ```json
@@ -102,7 +102,7 @@ Following is an example of message issued by Members Webhook:
         "attributes": {
             "hash": "HashOfData"
         },
-        "data": [{updatedMemberScopedData}]
+        "data": [{updatedPersonScopedData}],
         "messageId": "2070443601311540",
         "message_id": "2070443601311540",
         "publishTime": "2021-02-26T19:13:55.749Z",
@@ -111,7 +111,7 @@ Following is an example of message issued by Members Webhook:
    "subscription": "idOfASubscription"
 }
 ```
-where ``` updatedMemberScopedData ``` is PersonDetails entity with removed properties according to scopes approved.
+where ``` updatedPersonScopedData ``` is PersonDetails entity with removed properties according to scopes approved. PersonDetails schema can be found in [Data Structures and Scopes](data-structures-and-scopes.md)
 
 ### Confirming message
 After you receive a push request, return an HTTP status code. To acknowledge the message, return one of the following status codes:
