@@ -174,7 +174,9 @@ After you receive a push request, return an HTTP status code. To acknowledge the
 
 Your application has by default 600 seconds to acknowledge message.
 
-To send a negative acknowledgement for the message, return any other status code. If you send a negative acknowledgement or the acknowledgement deadline expires, Members Webhooks resends the message. You can't modify the acknowledgement deadline of individual messages that you receive from push subscriptions.
+To send a negative acknowledgement for the message, return any other status code. If you send a negative acknowledgement or the acknowledgement deadline expires, Members Webhooks resends the message. This means that if you encounter a permanent error that you know will not be fixed (for example updating an unknown user and you refuse to create new users), you should acknowledge the message, otherwise you will recieve it again and again!  
+
+You can't modify the acknowledgement deadline of individual messages that you receive from push subscriptions.
 
 ### Signing key
 
