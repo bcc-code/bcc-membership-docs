@@ -19,7 +19,8 @@ To access your application please see the [Getting Started](index.md) guid and t
 
 ###### URL
 
-The URL fields has to be a fully valid URL including the protocol (https), we don't add or remove anything when posting to this URL
+The URL fields has to be a fully valid URL including the protocol (https), we don't add or remove anything when posting to this URL.
+NOTE: updating webhook endpoint URL may take up to 2 minutes in the system.
 
 ###### Signing Key
 
@@ -64,6 +65,8 @@ onst fetch = require('node-fetch');
        console.log(error.message)
    }
 ```
+
+NOTE: updating webhook endpoint URL may take up to 2 minutes in the system.
 
 ###### Signing Key
 
@@ -142,6 +145,31 @@ Following is an example of message issued by Members Webhook:
 
 where `message.data` is an array and `updatedPersonScopedData` is PersonDetails entity with removed properties according to scopes approved. PersonDetails schema can be found in [Data Structures and Scopes](data-structures-and-scopes.md)
 
+### Order of operration while receiving message
+1. Decode message data from Base64 to plainstring.
+2. Calculate hash from plainstring of data and output it as base64 ewncoded string.
+3. Compare calculated hash with one send in message attributes.
+4. Deserialize plainstring data to object.
+
+### Signing key
+
+Alongside message data of POST Request Members Webhook sends ``` hash ``` attribute. This is base64-encoded string containing SHA256 HMAC of stringified message data using singingKey from Webhook configuration for your app. Only Members and your application knows this secret, so you can use it to verify integrity of message data.
+
+To sign message code like this is used:
+```typescript
+async signMessage(perssnData: any, signingKey: string) {
+    const {createHmac} = await import('crypto');
+    const hash = createHmac('sha256', signingKey)
+        .update(JSON.stringify(personData))
+        .digest()
+        .toString('base64')
+    return hash;
+}
+```
+
+To check validity of message data replicate code above and compare both hashes. If they do not match, message data was tampered with.
+
+
 ### Deserializing message data
 
 Message data is Base64-encoded and must be decoded first.
@@ -177,21 +205,3 @@ Your application has by default 600 seconds to acknowledge message.
 To send a negative acknowledgement for the message, return any other status code. If you send a negative acknowledgement or the acknowledgement deadline expires, Members Webhooks resends the message.  Webhook  will continue to resend unacknowledged message with increasing interval (from 10 to 600 seconds) and will stop resending  after 7 days. This means that if you encounter a permanent error that you know will not be fixed (for example updating an unknown user and you refuse to create new users), you should acknowledge the message, otherwise you will recieve it again and again!  
 
 You can't modify the acknowledgement deadline of individual messages that you receive from push subscriptions.
-
-### Signing key
-
-Alongside message data of POST Request Members Webhook send ``` hash ``` attribute. This is base64-encoded string containing SHA256 HMAC of stringified message data using singingKey from Webhook configuration for your app. Only Members and your application knows this secret, so you can use it to verify integrity of message data.
-
-To sign message code like this is used:
-```typescript
-async signMessage(perssnData: any, signingKey: string) {
-    const {createHmac} = await import('crypto');
-    const hash = createHmac('sha256', signingKey)
-        .update(JSON.stringify(perssnData))
-        .digest()
-        .toString('base64')
-    return hash;
-}
-```
-
-To check validity of message data replicate code above and compare both hashes. If they do not match, message data was tampered with.
