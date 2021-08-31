@@ -20,6 +20,7 @@ To access your application please see the [Getting Started](index.md) guid and t
 ###### URL
 
 The URL fields has to be a fully valid URL including the protocol (https), we don't add or remove anything when posting to this URL.
+
 NOTE: updating webhook endpoint URL may take up to 2 minutes in the system.
 
 ###### Signing Key
