@@ -20,12 +20,14 @@ To access your application please see the [Getting Started](index.md) guid and t
 ###### URL
 
 The URL fields has to be a fully valid URL including the protocol (https), we don't add or remove anything when posting to this URL.
+This field is required.
 
 NOTE: updating webhook endpoint URL may take up to 2 minutes in the system.
 
 ###### Signing Key
 
-The signing key is used to create a hash of the body of the request. This will gives you the ability to verify the origin of the HTTP POST
+The signing key is used to create a hash of the body of the request. This gives you the ability to verify the origin of the HTTP POST
+This field is required.
 
 ###### Run Test
 
