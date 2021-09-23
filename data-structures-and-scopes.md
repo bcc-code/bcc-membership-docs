@@ -96,7 +96,7 @@ Currently these scopes are all related to the `person` object and maps to the pe
   }
 ```
 ###### `members.read_membership`
-Caution: `church.org` property is depricated and will be removed soon
+Caution: `church.org` property is deprecated and will be removed soon
 ```json
   {
     "personID": 54512,
@@ -145,7 +145,7 @@ Caution: `church.org` property is depricated and will be removed soon
   }
 ```
 ###### `members.read_family`
-Caution: `church.org` property is depricated and will be removed soon
+Caution: `church.org` property is deprecated and will be removed soon
 ```json
   {
     "personID": 54512,
