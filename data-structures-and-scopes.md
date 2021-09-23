@@ -65,7 +65,7 @@ Currently these scopes are all related to the `person` object and maps to the pe
     "lastName": "Daly",
     "displayName": "Philly Pelle Daly",
     "birthDate": "1988-12-08T00:00:00",
-    "genderCode": 1,
+    "gender": "Male",
     "cultureCode1": "en-US",
     "profilePicture": "https://storage.googleapis.com/kinetic-center-276213_profile-pictures/178509735_a0mdd0q2qh.jpg",
     "lastChangedDate": "2021-07-16T12:41:10.168Z"
@@ -96,6 +96,7 @@ Currently these scopes are all related to the `person` object and maps to the pe
   }
 ```
 ###### `members.read_membership`
+Caution: `church.org` property is depricated and will be removed soon
 ```json
   {
     "personID": 54512,
@@ -103,7 +104,24 @@ Currently these scopes are all related to the `person` object and maps to the pe
     "church": {
       "active": true,
       "archived": false,
+      "startDate": "2020-10-18T11:52:46.474Z",
       "endDate": "2021-11-28T00:00:00.000Z",
+      "name": "Oslo/Follo",
+      "visitingAddress": {
+        "address1": "Ryenstubben 2",
+        "address2": "0679 Oslo",
+        "address3": null,
+        "address4": null,
+        "city": null,
+        "country": {
+          "iso2Code": "no",
+          "nameEn": "Norway",
+          "nameNative": "Norge",
+          "nameNo": "Norge"
+        },
+        "postalCode": 1444
+      },
+      "orgID": 69,
       "org": {
         "churchID": 69,
         "name": "Oslo/Follo",
@@ -122,12 +140,12 @@ Currently these scopes are all related to the `person` object and maps to the pe
           },
           "postalCode": 1444
         }
-      },
-      "startDate": "2020-10-18T11:52:46.474Z"
+      }
     }
   }
 ```
 ###### `members.read_family`
+Caution: `church.org` property is depricated and will be removed soon
 ```json
   {
     "personID": 54512,
@@ -135,6 +153,7 @@ Currently these scopes are all related to the `person` object and maps to the pe
       "spouse": [
         {
           "church": {
+            "orgID": 69,
             "org": {
               "churchID": 69
             }
