@@ -1,3 +1,8 @@
+---
+layout: post
+title: Blogging Like a Hacker
+---
+
 # API Integration
 **_NB. We recommend that you use [webhooks](webhooks.md) to keep your system up to date with the Members data, as this will relieve the load from the API. But you are still welcome to use the API_**
 ## Menu
