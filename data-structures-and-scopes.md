@@ -17,7 +17,15 @@ Currently Members supports the following scopes. (_To understand the concept of 
 
 
 #### Members (Custom Scopes)
+- `members.read_name`
+- `members.read_birthdate - new`
+- `members.read_gender - new`
+- `members.read_culture - new`
+- `members.read_picture - new`
 - `members.read_membership`
+- `members.read_spouse`
+- `members.read_children_dependents - new`
+- `members.read_parents_guardians - new`
 - `members.read_family`
 
 Once you have the "Technical Administrator" role ([See Getting Started](index.md)) you will be able to log in to members and apply for these scopes for your application. See [API integration](api-integration.md) it shows the navigation to your application.
@@ -25,17 +33,19 @@ Once you have the "Technical Administrator" role ([See Getting Started](index.md
 ## Data Structure
 Currently these scopes are all related to the `person` object and maps to the person fields as follows...
 
-###### By default you automatically get provided with the "personID" even if you don't have access to any scopes.
+###### By default you automatically get provided with the "personID" and "lastChangedDate"
 ```json
   {
-    "personID": 54512
+    "personID": 54512,
+    "lastChangedDate": "2021-07-16T12:41:10.168Z" 
   }
 ```
 ###### `email`
 ```json
   {
     "personID": 54512,
-    "email": "philly.daly@gmail.com"
+    "email": "philly.daly@gmail.com",
+    "lastChangedDate": "2021-07-16T12:41:10.168Z"
   }
 ```
 ###### `phone`
@@ -53,7 +63,8 @@ Currently these scopes are all related to the `person` object and maps to the pe
       "number": " 925 07 748",
       "prefix": "47",
       "unFormatted": "+4792507748"
-    }
+    },
+    "lastChangedDate": "2021-07-16T12:41:10.168Z"
   }
 ```
 ###### `profile`
@@ -92,7 +103,43 @@ Currently these scopes are all related to the `person` object and maps to the pe
       "formattedAddressLine5": "",
       "formattedAddressLine6": "",
       "postalCode": "1435"
-    }
+    },
+    "lastChangedDate": "2021-07-16T12:41:10.168Z"
+  }
+```
+###### `members.read_name`
+```json
+  {
+    "personID": 54512,
+    "firstName": "Philly",
+    "middleName": "Pelle",
+    "lastName": "Daly",
+    "displayName": "Philly Pelle Daly",
+    "lastChangedDate": "2021-07-16T12:41:10.168Z"   
+  }
+```
+###### `members.read_birthdate`
+```json
+  {
+    "personID": 54512,    
+    "birthDate": "1988-12-08T00:00:00",    
+    "lastChangedDate": "2021-07-16T12:41:10.168Z"
+  }
+```
+###### `members.read_culture`
+```json
+  {
+    "personID": 54512,    
+    "cultureCode1": "en-US",    
+    "lastChangedDate": "2021-07-16T12:41:10.168Z"
+  }
+```
+###### `members.read_picture`
+```json
+  {
+    "personID": 54512,    
+    "profilePicture": "https://storage.googleapis.com/kinetic-center-276213_profile-pictures/178509735_a0mdd0q2qh.jpg",
+    "lastChangedDate": "2021-07-16T12:41:10.168Z"
   }
 ```
 ###### `members.read_membership`
@@ -141,6 +188,72 @@ Caution: `church.org` property is deprecated and will be removed soon
           "postalCode": 1444
         }
       }
+    },
+    "lastChangedDate": "2021-07-16T12:41:10.168Z"
+  }
+```
+###### `members.spouse`
+Caution: `church.org` property is deprecated and will be removed soon
+```json
+  {
+    "personID": 54512,
+    "related": {
+      "spouse": [
+        {
+          "church": {
+            "orgID": 69,
+            "org": {
+              "churchID": 69
+            }
+          },
+          "displayName": "Batie Sofa Daly",
+          "personID": 13629
+        }
+      ]
+    }
+  }
+```
+###### `members.read_children_dependents`
+Caution: `church.org` property is deprecated and will be removed soon
+```json
+  {
+    "personID": 54512,
+    "related": {
+      "children": [
+        {
+          "church": {
+            "orgID": 69,
+            "org": {
+              "churchID": 69
+            }
+          },
+          "displayName": "Ozzie Slabby",
+          "personID": 13623
+        }
+      ],      
+      "dependents": [...]     
+    }
+  }
+```
+###### `members.read_parents_guardians`
+Caution: `church.org` property is deprecated and will be removed soon
+```json
+  {
+    "personID": 54512,
+    "related": {
+      "parents": [
+        {
+          "church": {
+            "orgID": 69,
+            "org": {
+              "churchID": 69
+            }
+          },
+          "displayName": "Frikkie Dally",
+          "personID": 13624
+        }
+      ],      
+      "guardians": [...]     
     }
   }
 ```
