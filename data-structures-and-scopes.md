@@ -260,14 +260,7 @@ Caution: `church.org` property is deprecated and will be removed soon
     "personID": 54512,
     "related": {
       "spouse": [
-        {
-          "church": {
-            "orgID": 69,
-            "org": {
-              "churchID": 69
-            }
-          },
-          "displayName": "Batie Sofa Daly",
+        {        
           "personID": 13629
         }
       ]
@@ -275,46 +268,38 @@ Caution: `church.org` property is deprecated and will be removed soon
   }
 ```
 ###### `members.read_children_dependents`
-Caution: `church.org` property is deprecated and will be removed soon
 ```json
   {
     "personID": 54512,
     "related": {
       "children": [
-        {
-          "church": {
-            "orgID": 69,
-            "org": {
-              "churchID": 69
-            }
-          },
-          "displayName": "Ozzie Slabby",
+        {          
           "personID": 13623
         }
       ],      
-      "dependents": [...]     
+      "dependents": [
+        {          
+          "personID": 16633
+        }
+      ]     
     }
   }
 ```
 ###### `members.read_parents_guardians`
-Caution: `church.org` property is deprecated and will be removed soon
 ```json
   {
     "personID": 54512,
     "related": {
       "parents": [
-        {
-          "church": {
-            "orgID": 69,
-            "org": {
-              "churchID": 69
-            }
-          },
-          "displayName": "Frikkie Dally",
+        {          
           "personID": 13624
         }
       ],      
-      "guardians": [...]     
+      "guardians": [
+         {          
+          "personID": 14654
+        }
+      ]     
     }
   }
 ```
