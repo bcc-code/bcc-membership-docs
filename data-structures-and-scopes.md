@@ -162,7 +162,6 @@ Currently these scopes are all related to the `person` object and maps to the pe
   }
 ```
 ###### `members.read_church`
-Caution: `church.org` property is deprecated and will be removed soon
 ```json
   {
     "personID": 54512,
@@ -188,31 +187,11 @@ Caution: `church.org` property is deprecated and will be removed soon
         "postalCode": 1444
       },
       "orgID": 69,
-      "org": {
-        "churchID": 69,
-        "name": "Oslo/Follo",
-        "orgID": 69,
-        "visitingAddress": {
-          "address1": "Ryenstubben 2",
-          "address2": "0679 Oslo",
-          "address3": null,
-          "address4": null,
-          "city": null,
-          "country": {
-            "iso2Code": "no",
-            "nameEn": "Norway",
-            "nameNative": "Norge",
-            "nameNo": "Norge"
-          },
-          "postalCode": 1444
-        }
-      }
     },
     "lastChangedDate": "2021-07-16T12:41:10.168Z"
   }
 ```
 ###### `members.read_membership`
-Caution: `church.org` property is deprecated and will be removed soon
 ```json
   {
     "personID": 54512,
@@ -238,31 +217,11 @@ Caution: `church.org` property is deprecated and will be removed soon
         "postalCode": 1444
       },
       "orgID": 69,
-      "org": {
-        "churchID": 69,
-        "name": "Oslo/Follo",
-        "orgID": 69,
-        "visitingAddress": {
-          "address1": "Ryenstubben 2",
-          "address2": "0679 Oslo",
-          "address3": null,
-          "address4": null,
-          "city": null,
-          "country": {
-            "iso2Code": "no",
-            "nameEn": "Norway",
-            "nameNative": "Norge",
-            "nameNo": "Norge"
-          },
-          "postalCode": 1444
-        }
-      }
     },
     "lastChangedDate": "2021-07-16T12:41:10.168Z"
   }
 ```
 ###### `members.spouse`
-Caution: `church.org` property is deprecated and will be removed soon
 ```json
   {
     "personID": 54512,
@@ -312,7 +271,6 @@ Caution: `church.org` property is deprecated and will be removed soon
   }
 ```
 ###### `members.read_family`
-Caution: `church.org` property is deprecated and will be removed soon
 ```json
   {
     "personID": 54512,
