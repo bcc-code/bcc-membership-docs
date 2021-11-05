@@ -137,6 +137,14 @@ Currently these scopes are all related to the `person` object and maps to the pe
     "lastChangedDate": "2021-07-16T12:41:10.168Z"
   }
 ```
+###### `members.read_gender`
+```json
+  {
+    "personID": 54512,    
+    "gender": "Male",   
+    "lastChangedDate": "2021-07-16T12:41:10.168Z"
+  }
+```
 ###### `members.read_culture`
 ```json
   {
