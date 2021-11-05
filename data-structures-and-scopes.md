@@ -12,7 +12,7 @@ Currently Members supports the following scopes. (_To understand the concept of 
 #### Identity (These scopes are consistent with [OIDC](https://openid.net/specs/openid-connect-core-1_0.html) scopes related to claims)
 - `email`
 - `phone`
-- `profile`
+- `profile - deprecated`
 - `address`
 
 
@@ -23,11 +23,12 @@ Currently Members supports the following scopes. (_To understand the concept of 
 - `members.read_gender - new`
 - `members.read_culture - new`
 - `members.read_picture - new`
-- `members.read_membership`
+- `members.read_church - new`
+- `members.read_membership - deprecated`
 - `members.read_spouse`
 - `members.read_children_dependents - new`
 - `members.read_parents_guardians - new`
-- `members.read_family`
+- `members.read_family - deprecated`
 
 Once you have the "Technical Administrator" role ([See Getting Started](index.md)) you will be able to log in to members and apply for these scopes for your application. See [API integration](api-integration.md) it shows the navigation to your application.
 
