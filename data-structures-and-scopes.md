@@ -17,6 +17,7 @@ Currently Members supports the following scopes. (_To understand the concept of 
 
 
 #### Members (Custom Scopes)
+- `members.read_person_id`
 - `members.read_name`
 - `members.read_birthdate - new`
 - `members.read_gender - new`
@@ -38,6 +39,13 @@ Currently these scopes are all related to the `person` object and maps to the pe
   {
     "personID": 54512,
     "lastChangedDate": "2021-07-16T12:41:10.168Z" 
+  }
+```
+###### `members.read_person_id`
+```json
+  {
+    "personID": 54512,   
+    "lastChangedDate": "2021-07-16T12:41:10.168Z"
   }
 ```
 ###### `email`
