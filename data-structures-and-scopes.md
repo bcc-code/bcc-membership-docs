@@ -9,14 +9,11 @@ This section describe `person` object and how it relates to scopes.
 
 ## Scopes
 Currently Members supports the following scopes. (_To understand the concept of scopes please have a look at scopes section on the [Home](index.md) page_)
-#### Identity (These scopes are consistent with [OIDC](https://openid.net/specs/openid-connect-core-1_0.html) scopes related to claims)
-- `email`
-- `phone`
-- `profile - deprecated`
-- `address`
-
-
 #### Members (Custom Scopes)
+- `members.email`
+- `members.phone`
+- `members.profile - deprecated`
+- `members.address`
 - `members.read_person_id`
 - `members.read_name`
 - `members.read_birthdate - new`
@@ -51,7 +48,7 @@ Currently these scopes are all related to the `person` object and maps to the pe
     "lastChangedDate": "2021-07-16T12:41:10.168Z"
   }
 ```
-###### `email`
+###### `members.email`
 ```json
   {
     "personID": 54512,
@@ -59,7 +56,7 @@ Currently these scopes are all related to the `person` object and maps to the pe
     "lastChangedDate": "2021-07-16T12:41:10.168Z"
   }
 ```
-###### `phone`
+###### `members.phone`
 ```json
   {
     "personID": 54512,
@@ -78,7 +75,7 @@ Currently these scopes are all related to the `person` object and maps to the pe
     "lastChangedDate": "2021-07-16T12:41:10.168Z"
   }
 ```
-###### `profile`
+###### `members.profile`
 ```json
   {
     "personID": 54512,
@@ -93,7 +90,7 @@ Currently these scopes are all related to the `person` object and maps to the pe
     "lastChangedDate": "2021-07-16T12:41:10.168Z"
   }
 ```
-###### `address`
+###### `members.address`
 ```json
  {
     "personID": 54512,
