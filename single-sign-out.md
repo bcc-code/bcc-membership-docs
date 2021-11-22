@@ -44,7 +44,7 @@ Configuration consists of only two fields
 1. Callback URL (what url should signout hit in your app)
 2. HTTP Method (GET or POST)
 
-IMAGE
+![Screenshot from 2021-11-22 17-20-36](https://user-images.githubusercontent.com/16034216/142897335-d4be151f-2120-457d-8791-ea0050a2343f.png)
 
 You can choose endpoint and HTTP method but not querystring or params. 
 
@@ -52,4 +52,6 @@ If you select GET request, Sign Out will add ```?userid=USER_ID``` querystring t
 
 If you select POST request, ```userId``` will be sent in JSON body of a request.
 
-Your app responsibility is to clear any local session of user in question (dont bother with Auth0 session, it gets cleared by Sign Out itself) and return Sign Out request with status 200.
+EXAMPLE: Based on configuration shown in image, Sign Out would try to send GET request to ```http://mockserver:555/logout?userid=USERID```
+
+Your app responsibility is to clear any local session of user in question and return Sign Out request with status 200.
