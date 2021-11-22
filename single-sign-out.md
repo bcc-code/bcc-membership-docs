@@ -9,7 +9,7 @@ This page contains a description of Single Sign Out system, rolled out in sole p
 - [Single Sign Out](single-sign-out.md)
 
 ## Sign out - purpose
-BCC uses auth0 as main identity, authentication/authorization provider. BCC also uses OAuth protocol with OpenID Connect Identity Layer instead of SAML which means that out-of-the-box features of Auth0 are not enough to provide uniformed, federated sign-out experience, thus Single Sign Out project was born. Previous Sign-out component was imitating front-channel logout described [here](https://openid.net/specs/openid-connect-frontchannel-1_0.html).
+BCC uses Auth0 as main identity and authentication/authorization provider. BCC also uses OAuth protocol with OpenID Connect Identity Layer instead of SAML which means that out-of-the-box features of Auth0 are not enough to provide uniformed, federated sign-out experience, thus Single Sign Out project was born. Previous Sign-out component was imitating front-channel logout described [here](https://openid.net/specs/openid-connect-frontchannel-1_0.html).
 
 Current solution is modelled after OpenId Connect back-channel logout, described [here](https://openid.net/specs/openid-connect-backchannel-1_0.html).
 
