@@ -6,6 +6,7 @@ This section describe `person` object and how it relates to scopes.
 - [API integration](api-integration.md)
 - [Webhooks integration](webhooks.md)
 - [Data Structures and Scopes](data-structures-and-scopes.md)
+- [Single Sign Out](single-sign-out.md)
 
 ## Scopes
 Currently Members supports the following scopes. (_To understand the concept of scopes please have a look at scopes section on the [Home](index.md) page_)
