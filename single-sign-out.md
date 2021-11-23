@@ -52,6 +52,6 @@ If you select GET request, Sign Out will add ```?userid=USER_ID``` querystring t
 
 If you select POST request, ```userId``` will be sent in JSON body of a request.
 
-EXAMPLE: Based on configuration shown in image, Sign Out would try to send GET request to ```http://mockserver:555/logout?userid=USERID```
+EXAMPLE: Based on configuration shown in image, Sign Out would try to send GET request to ```http://mockserver:555/logout?userId=USERID```
 
 Your app responsibility is to clear any local session of user in question and return Sign Out request with status 200.
