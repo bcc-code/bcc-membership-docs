@@ -8,6 +8,7 @@ The Members System support webhooks. You can register your webhook in the UI or 
 -   [API integration](api-integration.md)
 -   [Webhooks integration](webhooks.md)
 -   [Data Structures and Scopes](data-structures-and-scopes.md)
+-   [Single Sign Out](single-sign-out.md)
 
 ## Webhook functionality (UI and API)
 

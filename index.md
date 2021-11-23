@@ -13,6 +13,7 @@ This documentation is aimed at you as a Developer/Technical Administrator for yo
 - [API integration](api-integration.md)
 - [Webhooks integration](webhooks.md)
 - [Data Structures and Scopes](data-structures-and-scopes.md)
+- [Single Sign Out](single-sign-out.md)
 
 ## Getting Started
 1. Write to [it@bcc.no](mailto:it@bcc.no) requesting the "Technical Administrator" role

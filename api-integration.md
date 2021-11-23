@@ -5,6 +5,7 @@
 - [API integration](api-integration.md)
 - [Webhooks integration](webhooks.md)
 - [Data Structures and Scopes](data-structures-and-scopes.md)
+- [Single Sign Out](single-sign-out.md)
 
 ## Integrating with the Members API
 Please read the [Getting Started](index.md) section before going through this page. Once scopes have been approved for your client (application) you can integrate with the members api.
