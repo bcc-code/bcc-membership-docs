@@ -182,7 +182,7 @@ Currently these scopes are all related to the `person` object and maps to the pe
           "nameNative": "Norge",
           "nameNo": "Norge"
         },
-        "postalCode": 1444
+        "postalCode": "1444"
       },
       "orgID": 69,
     },
