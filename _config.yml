@@ -1,4 +1,5 @@
 remote_theme: bcc-code/bcc-docs-theme
+title: BCC Members Docs
 plugins:
 - jekyll-remote-theme
-title: BCC Members Documentation
+
