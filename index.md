@@ -1,5 +1,5 @@
 ---
-title: BCC Members Docs
+title: BCC Sign-on & Membership System
 ---
 
 
