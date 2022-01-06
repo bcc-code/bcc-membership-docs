@@ -9,7 +9,7 @@
 
 ## Integrating with the Members API
 Please read the [Getting Started](index.md) section before going through this page. Once scopes have been approved for your client (application) you can integrate with the members api.
-
+ 
 ## Authentication and Authorization to the API
 It is currently only possible to get access to the API via an API Key. OAuth2 support will come soon.
 
