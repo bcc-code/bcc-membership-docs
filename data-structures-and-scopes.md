@@ -22,7 +22,7 @@ Currently Members supports the following scopes. (_To understand the concept of 
 - `members.read_culture - new`
 - `members.read_picture - new`
 - `members.read_church - new`
-- `members.read_club - comming`
+- `members.read_club - coming`
 - `members.read_membership - deprecated`
 - `members.read_spouse`
 - `members.read_children_dependents - new`
@@ -292,7 +292,7 @@ Currently these scopes are all related to the `person` object and maps to the pe
     }
   }
 ```
-###### `mmembers.read_orgs`
+###### `members.read_orgs`
 ```json
 {  
   "name": "Oslo/Follo",
