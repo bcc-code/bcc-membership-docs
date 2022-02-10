@@ -14,7 +14,7 @@ Please read the [Getting Started](index.md) section before going through this pa
 It is currently only possible to get access to the API via an API Key. OAuth2 support will come soon.
 
 ## API-key
-1. To get access to your API key, please navigate to your [organisation](https://members.bcc.no/organisations) click on the "Applications" tab, then on the application you want to work with and then the "Data Access" tab
+1. To get access to your API key, please navigate to your [organization](https://members.bcc.no/organisations) click on the "Applications" tab, then on the application you want to work with and then the "Data Access" tab
 ![image](https://user-images.githubusercontent.com/12196246/126334453-3cad28e8-b8f5-4156-8073-a79c4d7e647e.png)
 2. On the "Data Access" page you should see the section for API Keys
 ![image](https://user-images.githubusercontent.com/12196246/126334964-374e824b-8447-4a38-8b9b-a82becd6259a.png)
@@ -68,5 +68,5 @@ const fetch = require('node-fetch');
 ```
 
 ## OAuth2
-Comming soon
+Coming soon
 

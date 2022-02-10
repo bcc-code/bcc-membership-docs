@@ -24,7 +24,7 @@ It works as follow:
 1. User goes to any BCC website/web application integrated with Auth0
 2. User wants to log in.
 3. During login attempt, rules added to Auth pipeline in Auth0 create session identifier, composed of user Auth0 ID and timestamp of login.
-4. This global Session ID is sent to Sign Out endpoint ```/usersession``` alongside appId that user is loggin into.
+4. This global Session ID is sent to Sign Out endpoint ```/usersession``` alongside appId that user is logging into.
 5. Sign out stores that session metadata in Redis, indexed by Global Session ID.
 6. The rest of login flow is unchanged.
 
@@ -46,9 +46,9 @@ Configuration consists of only two fields
 
 ![Screenshot from 2021-11-22 17-20-36](https://user-images.githubusercontent.com/16034216/142897335-d4be151f-2120-457d-8791-ea0050a2343f.png)
 
-You can choose endpoint and HTTP method but not querystring or params. 
+You can choose endpoint and HTTP method but not query string or params. 
 
-If you select GET request, Sign Out will add ```?userid=USER_ID``` querystring to request. 
+If you select GET request, Sign Out will add ```?userid=USER_ID``` query string to request. 
 
 If you select POST request, ```userId``` will be sent in JSON body of a request.
 

@@ -45,7 +45,7 @@ When you click on "Sync Data" we will make sure to push all the persons your app
 Update `Webhook url` for application X. _(In order to remove the webhook set url to empty string)_
 
 ```js
-onst fetch = require('node-fetch');
+const fetch = require('node-fetch');
    try {
        let updatedField = {
            webhook: {
@@ -108,13 +108,13 @@ try {
 
 Trigger a `webhook test` for application X
 <br />
-_Code snippet comming soon_
+_Code snippet coming soon_
 
 ###### Sync Data
 
 Trigger a `full sync` for application X
 <br />
-_Code snippet comming soon_
+_Code snippet coming soon_
 
 ## Implementing webhooks in your app
 
@@ -123,7 +123,7 @@ Here you can find most important information on that topic.
 
 ### Confirming that webhook endpoint is properly exposed
 
-For Members Webhooks to properly deliver messages, endpoint specified in Members UI/API must be a publicly accessible HTTPS address. The server for the push endpoint must have a valid SSL certificate signed by a certificate authority. If all these requirements are fullfilled endpoint should be able to receive requests.
+For Members Webhooks to properly deliver messages, endpoint specified in Members UI/API must be a publicly accessible HTTPS address. The server for the push endpoint must have a valid SSL certificate signed by a certificate authority. If all these requirements are fulfilled endpoint should be able to receive requests.
 
 ### Receiving messages
 
@@ -149,11 +149,11 @@ Following is an example of message issued by Members Webhook:
 
 where `message.data` is an array and `updatedPersonScopedData` is PersonDetails entity with removed properties according to scopes approved. PersonDetails schema can be found in [Data Structures and Scopes](data-structures-and-scopes.md)
 
-### Order of operration while receiving message
-1. Decode message data from Base64 to plainstring.
-2. Calculate hash from plainstring of data and output it as base64 ewncoded string.
+### Order of operation while receiving message
+1. Decode message data from Base64 to plain string.
+2. Calculate hash from plain string of data and output it as base64 encoded string.
 3. Compare calculated hash with one send in message attributes.
-4. Deserialize plainstring data to object.
+4. Deserialize plain string data to object.
 
 ### Signing key
 
@@ -161,7 +161,7 @@ Alongside message data of POST Request Members Webhook sends ``` hash ``` attrib
 
 To sign message code like this is used:
 ```typescript
-async signMessage(perssnData: any, signingKey: string) {
+async signMessage(personData: any, signingKey: string) {
     const {createHmac} = await import('crypto');
     const hash = createHmac('sha256', signingKey)
         .update(JSON.stringify(personData))
@@ -206,6 +206,6 @@ After you receive a push request, return an HTTP status code. To acknowledge the
 
 Your application has by default 600 seconds to acknowledge message.
 
-To send a negative acknowledgement for the message, return any other status code. If you send a negative acknowledgement or the acknowledgement deadline expires, Members Webhooks resends the message.  Webhook  will continue to resend unacknowledged message with increasing interval (from 10 to 600 seconds) and will stop resending  after 7 days. This means that if you encounter a permanent error that you know will not be fixed (for example updating an unknown user and you refuse to create new users), you should acknowledge the message, otherwise you will recieve it again and again!  
+To send a negative acknowledgement for the message, return any other status code. If you send a negative acknowledgement or the acknowledgement deadline expires, Members Webhooks resends the message.  Webhook  will continue to resend unacknowledged message with increasing interval (from 10 to 600 seconds) and will stop resending  after 7 days. This means that if you encounter a permanent error that you know will not be fixed (for example updating an unknown user and you refuse to create new users), you should acknowledge the message, otherwise you will receive it again and again!  
 
 You can't modify the acknowledgement deadline of individual messages that you receive from push subscriptions.
