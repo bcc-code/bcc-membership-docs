@@ -18,18 +18,7 @@ jobs:
       - name: Push File
         uses: dmnemec/copy_file_to_another_repo_action@main
         with:
-          source_file: 'api-integration.md'
-          destination_branch: 'master'
-          destination_repo: 'bcc-code/bcc-code.github.io'
-          destination_folder: '_projects/bcc-membership-docs'
-          user_email: 'bcc-docs-bot@bcc.no'
-          user_name: 'bcc-docs-bot'
-          commit_message: 'Update Membership Docs'
-
-      - name: Push File
-        uses: dmnemec/copy_file_to_another_repo_action@main
-        with:
-          source_file: 'data-structures-and-scopes.md'
+          source_file: 'index.md'
           destination_branch: 'master'
           destination_repo: 'bcc-code/bcc-code.github.io'
           destination_folder: '_projects/bcc-membership-docs'
@@ -40,10 +29,21 @@ jobs:
       - name: Push File
         uses: dmnemec/copy_file_to_another_repo_action@main
         with:
-          source_file: 'index.md'
+          source_file: 'api-integration.md'
           destination_branch: 'master'
           destination_repo: 'bcc-code/bcc-code.github.io'
-          destination_folder: '_projects/bcc-membership-docs'
+          destination_folder: '_projects/bcc-membership-docs/docs'
+          user_email: 'bcc-docs-bot@bcc.no'
+          user_name: 'bcc-docs-bot'
+          commit_message: 'Update Membership Docs'
+
+      - name: Push File
+        uses: dmnemec/copy_file_to_another_repo_action@main
+        with:
+          source_file: 'data-structures-and-scopes.md'
+          destination_branch: 'master'
+          destination_repo: 'bcc-code/bcc-code.github.io'
+          destination_folder: '_projects/bcc-membership-docs/docs'
           user_email: 'bcc-docs-bot@bcc.no'
           user_name: 'bcc-docs-bot'
           commit_message: 'Update Membership Docs'
@@ -54,7 +54,7 @@ jobs:
           source_file: 'single-sign-out.md'
           destination_branch: 'master'
           destination_repo: 'bcc-code/bcc-code.github.io'
-          destination_folder: '_projects/bcc-membership-docs'
+          destination_folder: '_projects/bcc-membership-docs/docs'
           user_email: 'bcc-docs-bot@bcc.no'
           user_name: 'bcc-docs-bot'
           commit_message: 'Update Membership Docs'
@@ -65,7 +65,7 @@ jobs:
           source_file: 'webhooks.md'
           destination_branch: 'master'
           destination_repo: 'bcc-code/bcc-code.github.io'
-          destination_folder: '_projects/bcc-membership-docs'
+          destination_folder: '_projects/bcc-membership-docs/docs'
           user_email: 'bcc-docs-bot@bcc.no'
           user_name: 'bcc-docs-bot'
           commit_message: 'Update Membership Docs'
